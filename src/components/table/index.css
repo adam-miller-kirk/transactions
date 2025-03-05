@@ -1,0 +1,21 @@
+.table-container {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border: 0.1rem solid rgb(225, 225, 225);
+}
+
+.table-header {
+  background-color: rgb(232, 232, 232);
+  padding: 0.1rem 0.5rem;
+  border: 0.01rem solid rgb(225, 225, 225);
+  text-align: left;
+}
+
+.table-cell {
+  padding: 0.25rem 0.5rem;
+  border: 0.01rem solid rgb(225, 225, 225);
+  text-align: left;
+}
