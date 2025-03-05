@@ -2,7 +2,7 @@ import { useMemo, FC } from 'react';
 import { useReactTable, getCoreRowModel, ColumnDef } from '@tanstack/react-table';
 import { Transactions, Transaction } from '../../types/transactions';
 import Table from '../table/table';
-import { formatCurrency } from '../../utils/transactions';
+import { formatCurrency, formatDate } from '../../utils/transactions';
 
 interface TransactionsTableProps {
   transactions: Transactions;
@@ -21,6 +21,7 @@ const TransactionsTable: FC<TransactionsTableProps> = ({ transactions, loading }
     {
       header: 'Date',
       accessorKey: 'date',
+      cell: ({ getValue }) => formatDate(getValue()),
     },
     {
       header: 'Amount',
