@@ -21,3 +21,9 @@ h1 {
   font-size: xx-large;
   margin: 0;
 }
+
+/* TODO
+ styling is very static and build for landscape view on large monitors.
+ Tan stack helps but it will need phone support styling if values have to 
+ appear on a phone.
+*/
