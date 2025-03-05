@@ -9,16 +9,16 @@ const useTransactions = (apiUrl: string) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(apiUrl); // Use GET request for REST API
+        const response = await fetch(apiUrl);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
         const result = await response.json();
         
-        // Assuming the API returns an array of transactions directly
-        setTransactions(result.transactions); // Adjust the key based on the API response structure
+        setTransactions(result.transactions);
       } catch (err) {
-        setError('Error fetching data');
+        // TODO no a great error handler and would be better to pass the actual err instead of logging
+        setError('Error fetching transactions data');
         console.error(err);
       } finally {
         setLoading(false);

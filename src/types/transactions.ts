@@ -1,4 +1,4 @@
-// would be good to turn these into an enum
+// TODO the category would be better suited as an enum
 // enum Category {
 // }
 
